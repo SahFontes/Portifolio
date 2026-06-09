@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seu Nome | Desenvolvedora Full Stack</title>
+
+    <meta name="description"
+        content="Portfólio profissional de Desenvolvedora Full Stack especializada em aplicações web modernas.">
+
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">SarahFontes.dev</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-md-5 text-center">
+        <div class="qr-fixed">
+            <img src="./assets/img/qrcode.png" alt="QR Code Portfólio">
+        </div>
+    </div>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-6">
+
+                    <span class="hero-tag">
+                        Estudante - Desenvolvimento de Sistemas SENAI
+                    </span>
+
+                    <h1 class="hero-title">
+                        Construindo projetos com propósito, evolução e confiabilidade.
+                    </h1>
+
+                    <p class="hero-description">
+                        Desenvolvimento de aplicações web,
+                        Frontend, Backend e Banco de Dados para empresas e negócios.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary-custom">Ver Projetos</a>
+                        <button data-bs-toggle="modal" data-bs-target="#sobreModal" class="btn btn-outline-custom">Sobre
+                            mim</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="assets/img/perfil.jpg" alt="Foto profissional" class="profil-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="sobreModal" tabindex="-1" aria-labelledby="sobreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sobreModalLabel">Sobre Mim</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/img/perfil.jpg" alt="Foto profissional"
+                                    class="profil-image modal-profile-img">
+                            </div>
+                            <div class="col-md-7">
+                                <span class="section-tag">Sobre Mim</span>
+                                <h4 class="mt-3 mb-3">
+                                    Tecnologia, estratégia e foco em resultados.
+                                </h4>
+                                <p class="text-justify">
+                                    Sou estudante de Desenvolvimento Full Stack focada em criar soluções digitais
+                                    modernas utilizando as melhores práticas de engenharia de software.
+                                </p>
+                                <p class="text-justify">
+                                    Busco desenvolver novas habilidades e construir um caminho com propósito, foco,
+                                    coragem, confiabilidade e segurança.
+                                </p>
+                                <p class="text-justify">
+                                    Meu foco é desenvolver produtos intuitivos e preparados para crescimento.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary-custom" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="section bg-light-custom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="hero-tag">Competências</span>
+                <h2 class="section-title">Tecnologias</h2>
+            </div>
+
+            <div class="skills-wrapper">
+                <a class="section-tag" href="https://www.html5.com.br/guia/primeiros-passos" target="_blank">HTML</a>
+                <a class="section-tag" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">CSS</a>
+                <a class="section-tag"
+                    href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap</a>
+                <a class="section-tag" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">JavaScript</a>
+                <a class="section-tag" href="https://pt-br.legacy.reactjs.org/">React</a>
+                <a class="section-tag" href="https://nodejs.org/docs/latest/api/">Node.js</a>
+                <a class="section-tag" href="https://dev.mysql.com/doc/">MySQL</a>
+                <a class="section-tag" href="https://docs.github.com/pt">GitHub</a>
+                <a class="section-tag" href="https://help.figma.com/hc/en-us">Figma</a>
+                <a class="section-tag" href="https://support.microsoft.com/pt-br/excel">Exel</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="hero-tag">Portfólio</span>
+                <h2 class="section-title">Projetos Selecionados</h2>
+            </div>
+
+            <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <!-- SLIDE 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal1"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img1.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Responsividade com Bootstrap</h4>
+                                        <p>Uso contínuo de Bootstrap para a responsividade de um site.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal2"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img2.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Projeto com Bootstrap</h4>
+                                        <p>Uso da documentação para responsividade.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal3"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img3.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Estilização de imagens</h4>
+                                        <p>Aprendizado de estilização na web.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal4"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img4.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>App de alimentos</h4>
+                                        <p>Uso do Figma no TCC.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal5"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img5.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Bootstrap Modal</h4>
+                                        <p>Criação de interfaces interativas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal6"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img6.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Site de alimentos</h4>
+                                        <p>Desenvolvimento web responsivo.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="project-card" data-bs-toggle="modal" data-bs-target="#modal7"
+                                    style="cursor:pointer;">
+                                    <img src="assets/img/img7.png" class="d-block w-100">
+                                    <div class="project-content">
+                                        <h4>Banco de Dados MySQL</h4>
+                                        <p>Modelagem de sistema de vendas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAIS -->
+    <div class="modal fade" id="modal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img1.png" class="w-100">
+                <div class="p-3">
+                    <h4>Responsividade com Bootstrap</h4>
+                    <p>Uso contínuo de Bootstrap para a responsividade de um site.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img2.png" class="w-100">
+                <div class="p-3">
+                    <h4>Projeto com Bootstrap</h4>
+                    <p>Utilização da documentação para responsividade.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img3.png" class="w-100">
+                <div class="p-3">
+                    <h4>Estilização de imagens</h4>
+                    <p>Aprendizado de estilização na web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img4.png" class="w-100">
+                <div class="p-3">
+                    <h4>App de alimentos</h4>
+                    <p>Uso do Figma no TCC.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal5" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img5.png" class="w-100">
+                <div class="p-3">
+                    <h4>Bootstrap Modal</h4>
+                    <p>Criação de interfaces interativas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal6" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img6.png" class="w-100">
+                <div class="p-3">
+                    <h4>Site de alimentos</h4>
+                    <p>Desenvolvimento web responsivo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal7" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/img/img7.png" class="w-100">
+                <div class="p-3">
+                    <h4>Banco de Dados MySQL</h4>
+                    <p>Modelagem de sistema de vendas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section bg-light-custom">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="hero-tag">Carreira</span>
+                <h2 class="section-title">Experiência Profissional</h2>
+            </div>
+
+            <!-- PRIMEIRO ACCORDION -->
+            <div class="accordion timeline-accordion mb-3" id="accordionExperiencia1">
+
+                <div class="accordion-item timeline-item rounded-4">
+                    <h2 class="accordion-header" id="heading1-1">
+                        <button class="accordion-button collapsed timeline-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse1-1" aria-expanded="false"
+                            aria-controls="collapse1-1">
+                            Cursos SENAI EAD
+                        </button>
+                    </h2>
+                    <div id="collapse1-1" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia1">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Exel básico</li>
+                                <li>Competência Transversal - Segurança no Trabalho</li>
+                                <li>Fluência - Fundamentos da IA</li>
+                                <li>Por dentro da Segurança Cibernética</li>
+                                <li>Desvendando a Descarbonização</li>
+                                <li>Ética na IA</li>
+                            </ul>
+                            <a href="https://wa.me/5514996770181"
+                                class="d-flex justify-content-between text-success ">Ver certificados</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEGUNDO ACCORDION -->
+            <div class="accordion timeline-accordion mb-3" id="accordionExperiencia2">
+
+                <div class="accordion-item timeline-item rounded-4">
+                    <h2 class="accordion-header" id="heading2-1">
+                        <button class="accordion-button collapsed timeline-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse2-1" aria-expanded="false"
+                            aria-controls="collapse2-1">
+                            Cursos Senac
+                        </button>
+                    </h2>
+                    <div id="collapse2-1" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia2">
+                        <div class="accordion-body">
+                            <h6>Exel para iniciantes</h6>
+                            <p>Este curso tem por objetivo possibilitar ao participante inserir e manipular dados na
+                                planilha eletrônica, agregando informações básicas de cálculos om fórmulas e aplicação
+                                de funções.</p>
+                            <a href="https://wa.me/5514996770181"
+                                class="d-flex justify-content-between text-success ">Ver certificados</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SEGUNDO ACCORDION -->
+            <div class="accordion timeline-accordion mb-3" id="accordionExperiencia2">
+
+                <div class="accordion-item timeline-item rounded-4">
+                    <h2 class="accordion-header" id="heading3-1">
+                        <button class="accordion-button collapsed timeline-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse3-1" aria-expanded="false"
+                            aria-controls="collapse3-1">
+                            Cursos SENAI
+                        </button>
+                    </h2>
+                    <div id="collapse3-1" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia2">
+                        <div class="accordion-body">
+                            <h6>Desenvolvimento de Sistemas (Atual-2026).</h6>
+                            <p>O Curso Técnico em Desenvolvimento de Sistemas tem por objetivo habilitar profissionais
+                                para desenvolver, testar e implantar sistemas computacionais, atendendo normas e padrão
+                                de qualidade, usabilidade, integridade e segurança da informação.</p>
+                            <a href="https://wa.me/5514996770181"
+                                class="d-flex justify-content-between text-success ">Ver certificados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion timeline-accordion mb-3" id="accordionExperiencia2">
+
+                <div class="accordion-item timeline-item rounded-4">
+                    <h2 class="accordion-header" id="heading4-1">
+                        <button class="accordion-button collapsed timeline-button" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse4-1" aria-expanded="false"
+                            aria-controls="collapse4-1">
+                            Curso de Inverno UNESP Botucatu
+                        </button>
+                    </h2>
+                    <div id="collapse4-1" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia2">
+                        <div class="accordion-body">
+                            <h6>Escola de Inverno -FMVZ UNESP - 2025</h6>
+                            <p>O Programa de Pós-graduação em Medicina Veterinária da Faculdade de Medicina Veterinária
+                                e Zootecnia (FMVZ) da Unesp, câmpus de Botucatu, realizou uma Escola de Inverno, com
+                                atividades voltadas para alunos do Ensino Médio do município.
+                                Com o tema “A ciência da vida: como a Medicina Veterinária constrói a saúde para todos”,
+                                a Escola de Inverno tem o objetivo de levar os alunos do Ensino Médio para uma imersão
+                                no mundo universitário e da Medicina Veterinária, com palestras e atividades práticas
+                                sobre o tema – uma oportunidade de conhecerem mais sobre a Medicina Veterinária e todas
+                                as suas áreas de atuação.</p>
+                            <a href="https://wa.me/5514996770181"
+                                class="d-flex justify-content-between text-success ">Ver certificados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-box">
+                        <span class="hero-tag">Contato</span>
+                        <h2 class="section-title">Vamos conversar sobre seu próximo projeto.</h2>
+                        <hr>
+                        <a class="btn btn-primary-custom w-100" href="./contato.html">Enviar Mensagem</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h4>SarahFontes.dev</h4>
+                <div class="social-links">
+                    <a href="#">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+                <p>© 2026 Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
