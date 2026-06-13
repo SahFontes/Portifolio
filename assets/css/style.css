@@ -147,7 +147,7 @@ body{
 
 .hero-title{
 
-    font-size:4.3rem;
+    font-size:clamp(2rem, 5vw, 4.3rem);
 
     font-weight:800;
 
@@ -271,7 +271,7 @@ body{
 
 .section-title{
 
-    font-size:2.8rem;
+    font-size:clamp(1.6rem, 4vw, 2.8rem);
 
     font-weight:800;
 
@@ -376,16 +376,11 @@ body{
 
 }
 
-.skills-wrapper span:hover{
-
+.skills-wrapper a:hover{
     background:var(--accent);
-
     color:white;
-
     border-color:var(--accent);
-
 }
-
 /* ==========================
    PROJETOS
 ========================== */
@@ -514,6 +509,13 @@ body{
 
     box-shadow:var(--shadow);
 
+}
+
+@media (max-width: 576px) {
+    .contact-box {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
 }
 
 .form-control{
@@ -662,7 +664,7 @@ footer{
 
 }
 
-.profil-image{
+.profile-image{
     width:320px;
     height:320px;
     object-fit:cover;
@@ -681,24 +683,27 @@ footer{
 
 
 .profile-image{
-    width:220px;
-    height:220px;
+    width:320px;
+    height:320px;
     object-fit:cover;
     border-radius:50%;
-
     border:4px solid rgba(236,72,153,.25);
     box-shadow:0 15px 35px rgba(0,0,0,.12);
+    max-width:100%;
 }
 
 @media(max-width:768px){
+
     .profile-image{
-        width:160px;
-        height:160px;
+        width:220px;
+        height:220px;
+        margin-top:30px;
     }
+
 }
 
 .cursos-img{
-    width: px;
+    width: 160px;
     height: 200px;
     object-fit: contain;
 }
@@ -956,18 +961,246 @@ footer{
     display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .qr-fixed {
         display: none;
     }
 }
 
 .carousel-control-prev {
-    width: 2%;
-    left: -60px;
+    width: auto;
+    left: -50px;
 }
 
 .carousel-control-next {
-    width: 2%;
-    right: -60px;
+    width: auto;
+    right: -50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-control-prev {
+        left: 0;
+    }
+
+    .carousel-control-next {
+        right: 0;
+    }
+
+    #carouselProjetos {
+        padding: 0 40px;
+    }
+}
+/* ==========================
+   RESPONSIVO EXTRA (MOBILE FIRST)
+========================== */
+
+/* Hero: centralizar conteúdo em tablet/mobile */
+@media (max-width: 991px) {
+    .hero .row {
+        text-align: center;
+    }
+
+    .hero-description {
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+    }
+}
+
+/* Carousel: mostrar só 1 card em mobile */
+@media (max-width: 575px) {
+    .carousel-item .col-12:not(:first-child) {
+        display: none;
+    }
+}
+
+/* Modal: imagem não ultrapassar a tela */
+.modal-body img,
+.modal-content > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Skills: tamanho menor em mobile */
+@media (max-width: 576px) {
+    .skills-wrapper {
+        gap: 10px;
+    }
+
+    .section-tag {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .hero-tag {
+        font-size: 0.8rem;
+        padding: 7px 13px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+}
+
+/* ==========================
+   RESPONSIVIDADE FINAL
+========================== */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+@media(max-width:991px){
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-description{
+        margin:0 auto;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .navbar-collapse{
+        background:#fff;
+        padding:20px;
+        margin-top:15px;
+        border-radius:16px;
+        box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section{
+        padding:70px 0;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button{
+        width:100%;
+    }
+
+    .project-card{
+        margin-bottom:20px;
+    }
+
+    .contact-box{
+        padding:24px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-title{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .section-tag{
+        font-size:.8rem;
+        padding:6px 12px;
+    }
+
+    .hero-tag{
+        font-size:.8rem;
+    }
+
+
+    .profile-image{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:auto;
+
+    border:4px solid rgba(236,72,153,.25);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+}
+
+/* Tablet */
+@media(max-width:768px){
+
+    .profile-image{
+        width:200px;
+        height:200px;
+    }
+
+}
+
+/* Celular */
+@media(max-width:576px){
+
+    .profile-image{
+        width:160px;
+        height:160px;
+    }
+
+} 
+}
+
+.profile-image{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:auto;
+
+    border:4px solid rgba(236,72,153,.25);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.12);
+}
+
+/* Tablet */
+@media(max-width:768px){
+
+    .profile-image{
+        width:200px;
+        height:200px;
+    }
+
+}
+
+/* Celular */
+@media(max-width:576px){
+
+    .profile-image{
+        width:160px;
+        height:160px;
+    }
+
 }
