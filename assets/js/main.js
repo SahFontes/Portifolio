@@ -1,204 +1,204 @@
-/* ==========================
-   NAVBAR SCROLL EFFECT
-========================== */
+// /* ==========================
+//    NAVBAR SCROLL EFFECT
+// ========================== */
 
-const navbar = document.querySelector('.custom-navbar');
+// const navbar = document.querySelector('.custom-navbar');
 
-window.addEventListener('scroll', () => {
+// window.addEventListener('scroll', () => {
 
-    if (window.scrollY > 50) {
+//     if (window.scrollY > 50) {
 
-        navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
-        navbar.style.padding = "12px 0";
+//         navbar.style.boxShadow = "0 10px 30px rgba(0,0,0,0.08)";
+//         navbar.style.padding = "12px 0";
 
-    } else {
+//     } else {
 
-        navbar.style.boxShadow = "none";
-        navbar.style.padding = "18px 0";
+//         navbar.style.boxShadow = "none";
+//         navbar.style.padding = "18px 0";
 
-    }
+//     }
 
-});
+// });
 
 
-/* ==========================
-   SCROLL SUAVE PARA LINKS
-========================== */
+// /* ==========================
+//    SCROLL SUAVE PARA LINKS
+// ========================== */
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    anchor.addEventListener('click', function (e) {
+//     anchor.addEventListener('click', function (e) {
 
-        e.preventDefault();
+//         e.preventDefault();
 
-        const target = document.querySelector(this.getAttribute('href'));
+//         const target = document.querySelector(this.getAttribute('href'));
 
-        if (target) {
+//         if (target) {
 
-            target.scrollIntoView({
+//             target.scrollIntoView({
 
-                behavior: 'smooth',
-                block: 'start'
+//                 behavior: 'smooth',
+//                 block: 'start'
 
-            });
+//             });
 
-        }
+//         }
 
-    });
+//     });
 
-});
+// });
 
 
-/* ==========================
-   ACTIVE LINK NO MENU
-========================== */
+// /* ==========================
+//    ACTIVE LINK NO MENU
+// ========================== */
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
+// const sections = document.querySelectorAll("section");
+// const navLinks = document.querySelectorAll(".nav-link");
 
-window.addEventListener("scroll", () => {
+// window.addEventListener("scroll", () => {
 
-    let current = "";
+//     let current = "";
 
-    sections.forEach(section => {
+//     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop;
+//         const sectionTop = section.offsetTop;
 
-        if (scrollY >= sectionTop - 150) {
-            current = section.getAttribute("id");
-        }
+//         if (scrollY >= sectionTop - 150) {
+//             current = section.getAttribute("id");
+//         }
 
-    });
+//     });
 
-    navLinks.forEach(link => {
+//     navLinks.forEach(link => {
 
-        link.classList.remove("active");
+//         link.classList.remove("active");
 
-        if (link.getAttribute("href") === "#" + current) {
+//         if (link.getAttribute("href") === "#" + current) {
 
-            link.classList.add("active");
+//             link.classList.add("active");
 
-        }
+//         }
 
-    });
+//     });
 
-});
+// });
 
 
-/* ==========================
-   ANIMAÇÃO AO SCROLL (REVEAL)
-========================== */
+// /* ==========================
+//    ANIMAÇÃO AO SCROLL (REVEAL)
+// ========================== */
 
-const revealElements = document.querySelectorAll(
-    ".project-card, .timeline-item, .about-image, .skills-wrapper span"
-);
+// const revealElements = document.querySelectorAll(
+//     ".project-card, .timeline-item, .about-image, .skills-wrapper span"
+// );
 
-const revealOnScroll = () => {
+// const revealOnScroll = () => {
 
-    const windowHeight = window.innerHeight;
+//     const windowHeight = window.innerHeight;
 
-    revealElements.forEach(el => {
+//     revealElements.forEach(el => {
 
-        const elementTop = el.getBoundingClientRect().top;
+//         const elementTop = el.getBoundingClientRect().top;
 
-        if (elementTop < windowHeight - 100) {
+//         if (elementTop < windowHeight - 100) {
 
-            el.style.opacity = "1";
-            el.style.transform = "translateY(0)";
-            el.style.transition = "all 0.6s ease";
+//             el.style.opacity = "1";
+//             el.style.transform = "translateY(0)";
+//             el.style.transition = "all 0.6s ease";
 
-        }
+//         }
 
-    });
+//     });
 
-};
+// };
 
-window.addEventListener("scroll", revealOnScroll);
+// window.addEventListener("scroll", revealOnScroll);
 
 
-/* ==========================
-   ESTADO INICIAL (ANIMAÇÃO)
-========================== */
+// /* ==========================
+//    ESTADO INICIAL (ANIMAÇÃO)
+// ========================== */
 
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
 
-    revealElements.forEach(el => {
+//     revealElements.forEach(el => {
 
-        el.style.opacity = "0";
-        el.style.transform = "translateY(20px)";
+//         el.style.opacity = "0";
+//         el.style.transform = "translateY(20px)";
 
-    });
+//     });
 
-    revealOnScroll();
+//     revealOnScroll();
 
-});
+// });
 
 
-/* ==========================
-   FORMULÁRIO (UX FEEDBACK)
-========================== */
+// /* ==========================
+//    FORMULÁRIO (UX FEEDBACK)
+// ========================== */
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
-if (form) {
+// if (form) {
 
-    form.addEventListener("submit", function (e) {
+//     form.addEventListener("submit", function (e) {
 
-        e.preventDefault();
+//         e.preventDefault();
 
-        const button = this.querySelector("button");
+//         const button = this.querySelector("button");
 
-        const originalText = button.innerText;
+//         const originalText = button.innerText;
 
-        button.innerText = "Enviando...";
-        button.disabled = true;
+//         button.innerText = "Enviando...";
+//         button.disabled = true;
 
-        setTimeout(() => {
+//         setTimeout(() => {
 
-            button.innerText = "Mensagem enviada ✔";
+//             button.innerText = "Mensagem enviada ✔";
 
-            setTimeout(() => {
+//             setTimeout(() => {
 
-                button.innerText = originalText;
-                button.disabled = false;
-                form.reset();
+//                 button.innerText = originalText;
+//                 button.disabled = false;
+//                 form.reset();
 
-            }, 2000);
+//             }, 2000);
 
-        }, 1500);
+//         }, 1500);
 
-    });
+//     });
 
-}
+// }
 
-const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+// const swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 3,
+//     spaceBetween: 20,
+//     loop: true,
+//     autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//     },
 
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//     },
 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+//     navigation: {
+//         nextEl: ".swiper-button-next",
+//         prevEl: ".swiper-button-prev",
+//     },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        },
-        992: {
-            slidesPerView: 3
-        }
-    }
-});
+//     breakpoints: {
+//         0: {
+//             slidesPerView: 1
+//         },
+//         768: {
+//             slidesPerView: 2
+//         },
+//         992: {
+//             slidesPerView: 3
+//         }
+//     }
+// });
